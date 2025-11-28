@@ -9,7 +9,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 # Create the directory where the volume will be mounted
 # This ensures the directory exists and permissions are correct
-mkdir -p /usr/share/nginx/html/images
+RUN mkdir -p /usr/share/nginx/html/images
 VOLUME ["/images"]
 
 # Expose port 80 for the web server
