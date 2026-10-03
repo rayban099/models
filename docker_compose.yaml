@@ -1,0 +1,14 @@
+services:
+  models:
+    # Build the image from the current directory
+    build: .
+    # Map the ports (Host:Container)
+    ports:
+      - "80:80"
+    # Mount the volume (Host:Container)
+    volumes:
+      - /mnt/burst/images:/usr/share/nginx/html/images
+    # Name the container for easy reference
+    container_name: models
+    # Restart automatically if it crashes
+    restart: always
