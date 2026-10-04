@@ -1,7 +1,7 @@
 services:
   models:
     # Build the image from the current directory
-    build: .
+    image: ghcr.io/rayban099/models:latest
     # Map the ports (Host:Container)
     ports:
       - "80:80"
